@@ -20,8 +20,9 @@ struct music: View {
                     .fontWeight(.black)
                     .foregroundColor(Color("morningBlue"))
                     .multilineTextAlignment(.center)
-                    .padding(20)
+                    .padding(10)
                 Text("Listening to music can be a very powerful antidote to loneliness, depression, and anxiety. Music is shown to have positive effects on brain chemicals such as dopamine, which is linked to feelings of happiness.")
+                    .padding(10)
                     .font(.custom(
                         "AmericanTypewriter",
                         fixedSize: 28))
@@ -31,6 +32,7 @@ struct music: View {
                     .multilineTextAlignment(.center)
                     .cornerRadius(10)
                     .padding()
+                    .padding(.horizontal, 10.0)
             }
         }
     }

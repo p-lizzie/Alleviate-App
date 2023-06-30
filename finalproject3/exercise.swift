@@ -20,8 +20,9 @@ struct exercise: View {
                     .fontWeight(.black)
                     .foregroundColor(Color("morningBlue"))
                     .multilineTextAlignment(.center)
-                    .padding(20)
+                    .padding(10)
                 Text("Exercise is a natural, effective way to reduce anxiety. It relieves tension and stress and boosts physical as well as mental energy.")
+                    .padding(10)
                     .font(.custom(
                         "AmericanTypewriter",
                         fixedSize: 30))
@@ -31,6 +32,8 @@ struct exercise: View {
                         .foregroundColor(Color("papayaWhip")))
                     
                     .cornerRadius(10)
+                    .padding()
+                    .padding(.horizontal, 10.0)
                 
             }
         }

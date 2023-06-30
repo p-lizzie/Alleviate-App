@@ -21,8 +21,9 @@ struct reframestress: View {
                     .fontWeight(.black)
                     .foregroundColor(Color("morningBlue"))
                     .multilineTextAlignment(.center)
-                    .padding(20)
+                    .padding(10)
                 Text("Instead of percieving stress as a negative thing that limits your potential, reframe it into a positive thing which helps instead of harms your potential. Your mindset is everything. If you think this way, your stress will turn into something positive.")
+                    .padding(10)
                     .font(.custom(
                         "AmericanTypewriter",
                         fixedSize: 28))
@@ -32,7 +33,9 @@ struct reframestress: View {
                     .multilineTextAlignment(.center)
                     .cornerRadius(10)
                     .padding()
+                    .padding(.horizontal, 10.0)
             }
+            
         }
     }
 }

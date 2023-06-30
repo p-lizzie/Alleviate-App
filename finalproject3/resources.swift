@@ -30,15 +30,17 @@ struct resources: View {
                                 "AmericanTypewriter",
                                 fixedSize: 20))
                             .foregroundColor(Color("morningBlue"))
+                            .multilineTextAlignment(.center)
                             .background(Rectangle()
                                 .foregroundColor(Color("papayaWhip")))
                             .cornerRadius(10)
-
+                            
                         Text("National Domestic Violence Hotline: 1-800-799-7233")
                             .font(.custom(
                                 "AmericanTypewriter",
                                 fixedSize: 20))
                             .foregroundColor(Color("morningBlue"))
+                            .multilineTextAlignment(.center)
                             .background(Rectangle()
                                 .foregroundColor(Color("papayaWhip")))
                             .cornerRadius(10)
@@ -48,22 +50,24 @@ struct resources: View {
                                 "AmericanTypewriter",
                                 fixedSize: 20))
                             .foregroundColor(Color("morningBlue"))
+                            .multilineTextAlignment(.center)
                             .background(Rectangle()
                                 .foregroundColor(Color("papayaWhip")))
                             .cornerRadius(10)
 
                         Text("LGBTQ Hotline: 1-888-843-4564")}
-                    .font(.custom(
-                        "AmericanTypewriter",
-                        fixedSize: 20))
-                    .foregroundColor(Color("morningBlue"))
-                    .background(Rectangle()
-                        .foregroundColor(Color("papayaWhip")))
-                    .cornerRadius(10)
-                    .padding(1)
-
+                            .font(.custom(
+                                "AmericanTypewriter",
+                                fixedSize: 20))
+                                    .padding(2)
+                            .foregroundColor(Color("morningBlue"))
+                            .background(Rectangle()
+                                .foregroundColor(Color("papayaWhip")))
+                            .cornerRadius(10)
+                            .padding(2)
                     
                     Text("Tips")
+                        .padding(.top)
                         .font(.custom(
                             "AmericanTypewriter",
                             fixedSize: 30))
@@ -79,6 +83,7 @@ struct resources: View {
                           .font(.custom(
                               "AmericanTypewriter",
                               fixedSize: 30))
+                                .padding(2)
                           .foregroundColor(Color("morningBlue"))
                           .background(Rectangle()
                               .foregroundColor(Color("papayaWhip")))
@@ -91,6 +96,7 @@ struct resources: View {
                                 .font(.custom(
                                     "AmericanTypewriter",
                                     fixedSize: 30))
+                                        .padding(2)
                                 .foregroundColor(Color("morningBlue"))
                                 .background(Rectangle()
                                     .foregroundColor(Color("papayaWhip")))
@@ -124,6 +130,7 @@ struct resources: View {
                         .font(.custom(
                             "AmericanTypewriter",
                             fixedSize: 30))
+                                .padding(2)
                         .foregroundColor(Color("morningBlue"))
                         .background(Rectangle()
                             .foregroundColor(Color("papayaWhip")))
@@ -142,7 +149,7 @@ struct resources: View {
                         
                     
                 }
-
+                .padding(.horizontal)
             }
         }
         

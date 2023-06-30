@@ -31,25 +31,26 @@ struct dailyjournal: View {
             RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Corner Radius@*/30.0/*@END_MENU_TOKEN@*/)
                 .fill(Color(red: 0.924, green: 0.777, blue: 0.711))
                 .frame(width: 300, height: 80)
-                .position(x: 195, y:100)
+                .position(x: 195, y:80)
             
             Text ("Daily Journal")
                 .font(.custom(
                     "AmericanTypewriter",
-                    fixedSize: 30))
-                .position(x: 195, y:100)
+                    fixedSize: 38))
+                .fontWeight(.black)
+                .position(x: 195, y:80)
             
             
             RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Corner Radius@*/30.0/*@END_MENU_TOKEN@*/)
                 .fill(Color(red: 0.988, green: 0.945, blue: 0.851))
-                .frame(width: 300, height: 60)
-                .position(x: 195, y:250)
+                .frame(width: 340, height: 60)
+                .position(x: 195, y:200)
             
             Text ("How are you feeling today?")
                 .font(.custom(
                     "AmericanTypewriter",
-                    fixedSize: 20))
-                .position(x: 195, y:250)
+                    fixedSize: 25))
+                .position(x: 195, y:200)
             
             HStack {
                 Button(action: {
@@ -62,7 +63,7 @@ struct dailyjournal: View {
                 }) {
                     Image ("angry")
                         .resizable().frame(width: 65, height: 65).foregroundColor(.gray).background(angryisSelected ? Color.yellow : Color.clear).clipShape(Circle())
-                        .position(x:70, y:350)
+                        .position(x:70, y:300)
                 }
                 
                 Button(action: {
@@ -75,7 +76,7 @@ struct dailyjournal: View {
                 }) {
                     Image ("sad")
                         .resizable().frame(width: 85, height: 85).foregroundColor(.red).background(sadIsSelected ? Color.yellow : Color.clear).clipShape(Circle())
-                        .position(x:50, y:350)
+                        .position(x:50, y:300)
 
                 }
                 
@@ -89,7 +90,7 @@ struct dailyjournal: View {
                 }) {
                     Image ("meh")
                         .resizable().frame(width: 75, height: 73).foregroundColor(.gray).background(mehIsSelected ? Color.yellow : Color.clear).clipShape(Circle())
-                        .position(x:30, y:350)
+                        .position(x:30, y:300)
                     
                 }
                 
@@ -101,22 +102,22 @@ struct dailyjournal: View {
                     self.angryisSelected = false
                 }) {
                         Image ("happy")
-                        .resizable().frame(width: 61, height: 65).foregroundColor(.green).background(happyIsSelected ? Color.yellow : Color.clear).clipShape(Circle())
-                        .position(x:10, y:350)
+                        .resizable().frame(width: 62, height: 65).foregroundColor(.green).background(happyIsSelected ? Color.yellow : Color.clear).clipShape(Circle())
+                        .position(x:10, y:300)
 
                 }
                             }
             
             RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Corner Radius@*/30.0/*@END_MENU_TOKEN@*/)
                 .fill(Color(red: 0.988, green: 0.945, blue: 0.851))
-                .frame(width: 300, height: 60)
-                .position(x: 195, y:450)
+                .frame(width: 335, height: 60)
+                .position(x: 195, y:390)
             
             Text ("Why do you feel this way?")
                 .font(.custom(
                     "AmericanTypewriter",
-                    fixedSize: 20))
-                .position(x: 195, y:450)
+                    fixedSize: 25))
+                .position(x: 195, y:390)
             
             VStack {
                 MultiLineTextField(txt: $text, counterLabel: $counterLabel)
@@ -128,7 +129,7 @@ struct dailyjournal: View {
                     .border(Color(red: 0.924, green: 0.777, blue: 0.711), width: 1)
                     .padding(.horizontal)
                 
-                    .position(x: 195, y:610)
+                    .position(x: 195, y:550)
                 
                         Button(action: {
                 self.moodModelController.createMood(emotion: Emotion(state: self.emotionState, color: self.moodColor), comment: self.text, date: Date())
