@@ -40,7 +40,7 @@ struct ContentView: View {
                           .padding(5)
                           
                           VStack(spacing: 30) {
-                              VStack{ NavigationLink(destination: dailyjournal()) {
+                              VStack{ NavigationLink(destination: dailyjournal(moodModelController: MoodModelController(), text: "text")) {
                                   Image("dailyjournalicon")
                                       .resizable(resizingMode: .stretch)
                                       .frame(width: 100.0, height: 100.0)
@@ -58,7 +58,7 @@ struct ContentView: View {
                                   .foregroundColor(Color("morningBlue"))}
                               HStack(alignment: .bottom, spacing: 70) {
                                   VStack(spacing: 30) {
-                                      NavigationLink(destination: tree()) {
+                                      NavigationLink(destination: tree2()) {
                                           Image("calendaricon")
                                               .resizable(resizingMode: .stretch)
                                               .frame(width: 80.0, height: 80.0)
